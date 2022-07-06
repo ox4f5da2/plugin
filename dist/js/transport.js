@@ -1,4 +1,4 @@
-// 交通
+// 交通工具
 const transport = {
   "steam_locomotive": "🚂",
   "railway_car": "🚃",

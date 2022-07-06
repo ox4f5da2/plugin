@@ -1,3 +1,4 @@
+// 物品
 const things = {
   "teapot": "🫖",
   "tea": "🍵",
