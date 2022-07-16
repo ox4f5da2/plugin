@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue(上) | 火龙果文档</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/plugin/images/common/logo.png">
+    <meta name="description" content="Karl_fang文档笔记">
+    
+    <link rel="preload" href="/plugin/assets/css/0.styles.815695dc.css" as="style"><link rel="preload" href="/plugin/assets/js/app.6bcd672a.js" as="script"><link rel="preload" href="/plugin/assets/js/2.0dc65c5a.js" as="script"><link rel="preload" href="/plugin/assets/js/41.6e400367.js" as="script"><link rel="prefetch" href="/plugin/assets/js/10.b2011a74.js"><link rel="prefetch" href="/plugin/assets/js/11.785ce144.js"><link rel="prefetch" href="/plugin/assets/js/12.1abff726.js"><link rel="prefetch" href="/plugin/assets/js/13.5b32e995.js"><link rel="prefetch" href="/plugin/assets/js/14.73af3a08.js"><link rel="prefetch" href="/plugin/assets/js/15.0d07ed30.js"><link rel="prefetch" href="/plugin/assets/js/16.e16bfb60.js"><link rel="prefetch" href="/plugin/assets/js/17.dd28672d.js"><link rel="prefetch" href="/plugin/assets/js/18.28de6ffa.js"><link rel="prefetch" href="/plugin/assets/js/19.9b1c077f.js"><link rel="prefetch" href="/plugin/assets/js/20.b7a40052.js"><link rel="prefetch" href="/plugin/assets/js/21.13ededb3.js"><link rel="prefetch" href="/plugin/assets/js/22.3e524e46.js"><link rel="prefetch" href="/plugin/assets/js/23.e70565b9.js"><link rel="prefetch" href="/plugin/assets/js/24.82ecefbd.js"><link rel="prefetch" href="/plugin/assets/js/25.47f64076.js"><link rel="prefetch" href="/plugin/assets/js/26.887141da.js"><link rel="prefetch" href="/plugin/assets/js/27.0adbc230.js"><link rel="prefetch" href="/plugin/assets/js/28.4678cbbb.js"><link rel="prefetch" href="/plugin/assets/js/29.8cc46427.js"><link rel="prefetch" href="/plugin/assets/js/3.75d187dd.js"><link rel="prefetch" href="/plugin/assets/js/30.79045775.js"><link rel="prefetch" href="/plugin/assets/js/31.d6701d96.js"><link rel="prefetch" href="/plugin/assets/js/32.200daad3.js"><link rel="prefetch" href="/plugin/assets/js/33.97ff19ac.js"><link rel="prefetch" href="/plugin/assets/js/34.b530c4ba.js"><link rel="prefetch" href="/plugin/assets/js/35.07eed652.js"><link rel="prefetch" href="/plugin/assets/js/36.88428886.js"><link rel="prefetch" href="/plugin/assets/js/37.f06845d1.js"><link rel="prefetch" href="/plugin/assets/js/38.9e337bb6.js"><link rel="prefetch" href="/plugin/assets/js/39.581b6d55.js"><link rel="prefetch" href="/plugin/assets/js/4.2557c00f.js"><link rel="prefetch" href="/plugin/assets/js/40.90f7c81d.js"><link rel="prefetch" href="/plugin/assets/js/42.82165da4.js"><link rel="prefetch" href="/plugin/assets/js/43.d7917580.js"><link rel="prefetch" href="/plugin/assets/js/44.ec25df08.js"><link rel="prefetch" href="/plugin/assets/js/45.d59d8ab8.js"><link rel="prefetch" href="/plugin/assets/js/46.e872c588.js"><link rel="prefetch" href="/plugin/assets/js/47.64fb74eb.js"><link rel="prefetch" href="/plugin/assets/js/48.7bc4a0d4.js"><link rel="prefetch" href="/plugin/assets/js/49.86d12a70.js"><link rel="prefetch" href="/plugin/assets/js/5.a7ef2093.js"><link rel="prefetch" href="/plugin/assets/js/50.02d4da36.js"><link rel="prefetch" href="/plugin/assets/js/51.073872ef.js"><link rel="prefetch" href="/plugin/assets/js/52.f81b6d57.js"><link rel="prefetch" href="/plugin/assets/js/53.cd419d45.js"><link rel="prefetch" href="/plugin/assets/js/54.e11e0d15.js"><link rel="prefetch" href="/plugin/assets/js/55.b2d46a0d.js"><link rel="prefetch" href="/plugin/assets/js/56.b19a724a.js"><link rel="prefetch" href="/plugin/assets/js/57.f3b90ca9.js"><link rel="prefetch" href="/plugin/assets/js/58.e087611c.js"><link rel="prefetch" href="/plugin/assets/js/59.2ceb4f5a.js"><link rel="prefetch" href="/plugin/assets/js/6.c90bfee5.js"><link rel="prefetch" href="/plugin/assets/js/60.1c3837bb.js"><link rel="prefetch" href="/plugin/assets/js/61.5351d62b.js"><link rel="prefetch" href="/plugin/assets/js/62.bf826f0f.js"><link rel="prefetch" href="/plugin/assets/js/63.9bfaf771.js"><link rel="prefetch" href="/plugin/assets/js/64.7709f4e4.js"><link rel="prefetch" href="/plugin/assets/js/65.d8f016ed.js"><link rel="prefetch" href="/plugin/assets/js/66.56ba731e.js"><link rel="prefetch" href="/plugin/assets/js/67.10a2aa0e.js"><link rel="prefetch" href="/plugin/assets/js/68.76d126f9.js"><link rel="prefetch" href="/plugin/assets/js/69.b03b9f47.js"><link rel="prefetch" href="/plugin/assets/js/7.90687158.js"><link rel="prefetch" href="/plugin/assets/js/70.2d1fb0ff.js"><link rel="prefetch" href="/plugin/assets/js/71.b8bf4d4a.js"><link rel="prefetch" href="/plugin/assets/js/72.c8404d6c.js"><link rel="prefetch" href="/plugin/assets/js/8.d8b4f155.js"><link rel="prefetch" href="/plugin/assets/js/9.968913dd.js">
+    <link rel="stylesheet" href="/plugin/assets/css/0.styles.815695dc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/plugin/" class="home-link router-link-active"><img src="/plugin/images/common/logo.png" alt="火龙果文档" class="logo"> <span class="site-name can-hide">火龙果文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/plugin/" class="nav-link">
+    Home
+  </a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Guide" class="dropdown-title"><span class="title">Guide</span> <span class="arrow down"></span></button> <button type="button" aria-label="Guide" class="mobile-dropdown-title"><span class="title">Guide</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+            其他
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/help/emoji.html" class="nav-link">
+    Emoji
+  </a></li></ul></li><li class="dropdown-item"><h4>
+            Plugin
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/plugin/前言.html" class="nav-link">
+    前言
+  </a></li><li class="dropdown-subitem"><a href="/plugin/plugin/myDevTool.html" class="nav-link">
+    myDevTool
+  </a></li><li class="dropdown-subitem"><a href="/plugin/plugin/myNewTab.html" class="nav-link">
+    myNewTab
+  </a></li><li class="dropdown-subitem"><a href="/plugin/plugin/Pitaya.html" class="nav-link">
+    Pitaya
+  </a></li></ul></li><li class="dropdown-item"><h4>
+            Manifest V3
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/guide/V3的配置更改.html" class="nav-link">
+    V3的配置更改
+  </a></li><li class="dropdown-subitem"><a href="/plugin/guide/V3的manifest.html" class="nav-link">
+    V3的manifest
+  </a></li><li class="dropdown-subitem"><a href="/plugin/help/declarePermission.html" class="nav-link">
+    权限声明
+  </a></li></ul></li><li class="dropdown-item"><h4>
+            NPM库
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/npm/mylibs.html" class="nav-link">
+    @karl_fang/mylibs
+  </a></li><li class="dropdown-subitem"><a href="/plugin/npm/js数据结构.html" class="nav-link">
+    @karl_fang/data-structure
+  </a></li></ul></li><li class="dropdown-item"><h4>
+            脚手架工具
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/guide/karl-cli.html" class="nav-link">
+    karl-cli
+  </a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+            Vue笔记系列
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/frontend/note/Vue(1).html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+    Vue(1)
+  </a></li><li class="dropdown-subitem"><a href="/plugin/frontend/note/Vue(2).html" class="nav-link">
+    Vue(2)
+  </a></li><li class="dropdown-subitem"><a href="/plugin/frontend/note/Vue(3).html" class="nav-link">
+    Vue(3)
+  </a></li><li class="dropdown-subitem"><a href="/plugin/frontend/note/Vue(4).html" class="nav-link">
+    Vue(4)
+  </a></li><li class="dropdown-subitem"><a href="/plugin/frontend/note/Vue(5).html" class="nav-link">
+    Vue(5)
+  </a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/ox4f5da2" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/plugin/" class="nav-link">
+    Home
+  </a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Guide" class="dropdown-title"><span class="title">Guide</span> <span class="arrow down"></span></button> <button type="button" aria-label="Guide" class="mobile-dropdown-title"><span class="title">Guide</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+            其他
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/help/emoji.html" class="nav-link">
+    Emoji
+  </a></li></ul></li><li class="dropdown-item"><h4>
+            Plugin
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/plugin/前言.html" class="nav-link">
+    前言
+  </a></li><li class="dropdown-subitem"><a href="/plugin/plugin/myDevTool.html" class="nav-link">
+    myDevTool
+  </a></li><li class="dropdown-subitem"><a href="/plugin/plugin/myNewTab.html" class="nav-link">
+    myNewTab
+  </a></li><li class="dropdown-subitem"><a href="/plugin/plugin/Pitaya.html" class="nav-link">
+    Pitaya
+  </a></li></ul></li><li class="dropdown-item"><h4>
+            Manifest V3
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/guide/V3的配置更改.html" class="nav-link">
+    V3的配置更改
+  </a></li><li class="dropdown-subitem"><a href="/plugin/guide/V3的manifest.html" class="nav-link">
+    V3的manifest
+  </a></li><li class="dropdown-subitem"><a href="/plugin/help/declarePermission.html" class="nav-link">
+    权限声明
+  </a></li></ul></li><li class="dropdown-item"><h4>
+            NPM库
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/npm/mylibs.html" class="nav-link">
+    @karl_fang/mylibs
+  </a></li><li class="dropdown-subitem"><a href="/plugin/npm/js数据结构.html" class="nav-link">
+    @karl_fang/data-structure
+  </a></li></ul></li><li class="dropdown-item"><h4>
+            脚手架工具
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/guide/karl-cli.html" class="nav-link">
+    karl-cli
+  </a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+            Vue笔记系列
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/frontend/note/Vue(1).html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+    Vue(1)
+  </a></li><li class="dropdown-subitem"><a href="/plugin/frontend/note/Vue(2).html" class="nav-link">
+    Vue(2)
+  </a></li><li class="dropdown-subitem"><a href="/plugin/frontend/note/Vue(3).html" class="nav-link">
+    Vue(3)
+  </a></li><li class="dropdown-subitem"><a href="/plugin/frontend/note/Vue(4).html" class="nav-link">
+    Vue(4)
+  </a></li><li class="dropdown-subitem"><a href="/plugin/frontend/note/Vue(5).html" class="nav-link">
+    Vue(5)
+  </a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/ox4f5da2" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/plugin/" aria-current="page" class="sidebar-link">README</a></li><li><a href="/plugin/Chrome插件.html" class="sidebar-link">Chrome插件</a></li><li><a href="/plugin/脚手架工具开发.html" class="sidebar-link">脚手架工具开发</a></li><li><a href="/plugin/vuepress.html" class="sidebar-link">vuepress快速上手</a></li><li><a href="/plugin/前端笔记.html" class="sidebar-link">前端笔记</a></li><li><a href="/plugin/npm发布流程.html" class="sidebar-link">npm发布流程</a></li><li><a href="/plugin/Leetcode.html" class="sidebar-link">Leetcode</a></li></ul> </aside> <main class="page"> <div class="content__default"><h1 id="vue-上"><a href="#vue-上" class="header-anchor">#</a> Vue(上)</h1> <p></p><div class="table-of-contents"><ul><li><a href="#_1-es6模块化">1. ES6模块化</a><ul><li><a href="#_1-1-前端模块化规范的分类">1.1. 前端模块化规范的分类</a></li><li><a href="#_1-2-什么是es6模块化规范">1.2. 什么是ES6模块化规范</a></li><li><a href="#_1-3-在node-js中体验es6模块化">1.3. 在node.js中体验ES6模块化</a></li><li><a href="#_1-4-es6模块化的基本语法">1.4. ES6模块化的基本语法</a></li></ul></li><li><a href="#_2-promise">2. Promise</a><ul><li><a href="#_2-1-回调地狱">2.1 回调地狱</a></li><li><a href="#_2-2-promise的基本概念">2.2 Promise的基本概念</a></li><li><a href="#_2-3-then-fs的基本使用">2.3 then-fs的基本使用</a></li><li><a href="#_2-4-基于promise按顺序读取文件的内容">2.4 基于Promise按顺序读取文件的内容</a></li><li><a href="#_2-5-通过-catch捕获错误">2.5 通过.catch捕获错误</a></li><li><a href="#_2-6-promise-all-方法">2.6 Promise.all()方法</a></li></ul></li><li><a href="#_3-async-await">3. async / await</a><ul><li><a href="#_3-1-async-await的基本使用">3.1 async/await的基本使用</a></li><li><a href="#_3-2-async-await的使用注意事项">3.2 async/await的使用注意事项</a></li></ul></li><li><a href="#_4-eventloop">4. EventLoop</a><ul><li><a href="#_4-1-同步任务和异步任务">4.1 同步任务和异步任务</a></li><li><a href="#_4-2-同步任务和异步任务的执行过程">4.2 同步任务和异步任务的执行过程</a></li><li><a href="#_4-3-eventloop的基本概念">4.3 EventLoop的基本概念</a></li><li><a href="#_4-4-宏任务与微任务">4.4 宏任务与微任务</a></li></ul></li></ul></div><p></p> <h2 id="_1-es6模块化"><a href="#_1-es6模块化" class="header-anchor">#</a> 1. ES6模块化</h2> <h3 id="_1-1-前端模块化规范的分类"><a href="#_1-1-前端模块化规范的分类" class="header-anchor">#</a> 1.1. 前端模块化规范的分类</h3> <p>在<strong>ES6模块化规范</strong>诞生之前， JavaScript社区已经尝试并提出了<strong>AMD、CMD、CommonJS</strong>等模块化规范。但是，这些由社区提出的模块化标准，还是存在一定的<strong>差异性</strong>与<strong>局限性</strong>、<strong>并不是</strong>浏览器与服务器<strong>通用的模块化标准</strong>，例如：</p> <ul><li>AMD和CMD适用于<strong>浏览器端</strong>的Javascript模块化</li> <li>CommonJS 适用于<strong>服务器端</strong>的Javascript模块化</li></ul> <p>太多的模块化规范给开发者增加了<strong>学习的难度</strong>与<strong>开发的成本</strong>。因此，<strong>大一统的ES6</strong>模块化规范诞生了!</p> <h3 id="_1-2-什么是es6模块化规范"><a href="#_1-2-什么是es6模块化规范" class="header-anchor">#</a> 1.2. 什么是ES6模块化规范</h3> <p><strong>ES6模块化规范是浏览器端与服务器端</strong>通用的模块化开发规范。它的出现极大的降低了前端开发者的模块化学习成本，开发者不需再额外学习AMD、CMD或CommonJS等模块化规范。</p> <p>ES6模块化规范中定义:</p> <ul><li><p>每个js 文件都是一个独立的模块</p></li> <li><p>导入其它模块成员使用<strong>import</strong>关键字</p></li> <li><p>向外共享模块成员使用<strong>export</strong>关键字</p></li></ul> <h3 id="_1-3-在node-js中体验es6模块化"><a href="#_1-3-在node-js中体验es6模块化" class="header-anchor">#</a> 1.3. 在node.js中体验ES6模块化</h3> <p>node.js中<strong>默认仅支持CommonJS模块化规范</strong>，若想基于node.js体验与学习ES6的模块化语法，可以按照如下两个步骤进行配置:</p> <ol><li><p>确保安装了<code>v14.15.1</code>或更高版本的node.js，</p></li> <li><p>在package.json的根节点中添加<code>&quot;type&quot;: &quot;module&quot;</code>节点</p></li></ol> <blockquote><p>快速新建package.json文件: 在终端中输入<code>npm init -y</code></p></blockquote> <h3 id="_1-4-es6模块化的基本语法"><a href="#_1-4-es6模块化的基本语法" class="header-anchor">#</a> 1.4. ES6模块化的基本语法</h3> <p>ES6的模块化主要包含如下3种用法:</p> <h4 id="_1-4-1-默认导出与默认导入"><a href="#_1-4-1-默认导出与默认导入" class="header-anchor">#</a> 1.4.1 默认导出与默认导入</h4> <h5 id="_1-4-1-1-默认导出"><a href="#_1-4-1-1-默认导出" class="header-anchor">#</a> 1.4.1.1 默认导出</h5> <p>语法: <strong>export default</strong>默认导出的成员</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//定义模块私有成员n1</span>
+<span class="token keyword">let</span> n1<span class="token operator">=</span><span class="token number">10</span>
+<span class="token comment">//定义模块私有成员n2 (外界访问不到n2，因为它没有被共享出去)</span>
+<span class="token keyword">let</span> n2 <span class="token operator">=</span> <span class="token number">20</span> 
+<span class="token comment">//定义模块私有方法show</span>
+<span class="token keyword">function</span> <span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> 
+<span class="token comment">//使用export default 默认导出语法，向外共享n1和show 两个成员</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span><span class="token punctuation">{</span> 
+	n1<span class="token punctuation">,</span>
+	show
+<span class="token punctuation">}</span>
+</code></pre></div><h5 id="_1-4-1-2-默认导入"><a href="#_1-4-1-2-默认导入" class="header-anchor">#</a> 1.4.1.2 默认导入</h5> <p>语法: <strong>import 接收名称from '模块标识符'</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//从01_ m1.js模块中导入export default 向外共享的成员</span>
+<span class="token comment">//并使用m1成员进行接收</span>
+<span class="token keyword">import</span> m1 <span class="token keyword">from</span> <span class="token string">'./01 m1.js'</span>
+<span class="token comment">//打印输出的结果为:</span>
+<span class="token comment">// { n1: 10，show: [Function: show] }</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>m1<span class="token punctuation">)</span>
+</code></pre></div><h5 id="_1-4-1-3-按需导出与按需导入的注意事项"><a href="#_1-4-1-3-按需导出与按需导入的注意事项" class="header-anchor">#</a> 1.4.1.3 按需导出与按需导入的注意事项</h5> <p>每个模块中，<strong>只允许使用唯一的一次</strong>export default，否则会报错!</p> <h4 id="_1-4-2-按需导出与按需导入"><a href="#_1-4-2-按需导出与按需导入" class="header-anchor">#</a> 1.4.2 按需导出与按需导入</h4> <h5 id="_1-4-2-1-按需导出"><a href="#_1-4-2-1-按需导出" class="header-anchor">#</a> 1.4.2.1 按需导出</h5> <p>语法: <strong>export按需导出的成员</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//当前模块为03_ m2.js</span>
+<span class="token comment">//向外按需导出变量s1</span>
+<span class="token keyword">export</span> <span class="token keyword">let</span> s1 <span class="token operator">=</span> <span class="token string">'aaa'</span> 
+<span class="token comment">//向外按需导出变量s2</span>
+<span class="token keyword">export</span> <span class="token keyword">let</span> s2 <span class="token operator">=</span> <span class="token string">'ccc'</span>
+<span class="token comment">//向外按需导出方法say</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">say</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">a</span><span class="token operator">:</span> <span class="token number">20</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h5 id="_1-4-2-2-按需导出"><a href="#_1-4-2-2-按需导出" class="header-anchor">#</a> 1.4.2.2 按需导出</h5> <p>语法: <strong>import{ s1 } from '模块标识符'</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//导入模块成员</span>
+<span class="token keyword">import</span> info<span class="token punctuation">,</span> <span class="token punctuation">{</span>s1，s2 <span class="token keyword">as</span> str2，say<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./03 m2.js'</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>s1<span class="token punctuation">)</span> <span class="token comment">// 打印输出aaa</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>s2<span class="token punctuation">)</span> <span class="token comment">// 打印输出ccc</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>say<span class="token punctuation">)</span> <span class="token comment">//打印输出[Function: say]</span>
+</code></pre></div><h5 id="_1-4-2-3-按需导出与按需导入的注意事项"><a href="#_1-4-2-3-按需导出与按需导入的注意事项" class="header-anchor">#</a> 1.4.2.3 按需导出与按需导入的注意事项</h5> <ol><li><p>每个模块中可以使用<strong>多次</strong>按需导出</p></li> <li><p>按需<strong>导入的成员名称</strong>必须和<strong>按需导出的名称</strong>保持一致</p></li> <li><p>按需导入时，可以使用<strong>as关键字</strong>进行重命名</p></li> <li><p>按需导入可以和默认导入一起使用</p></li></ol> <h4 id="_1-4-3-直接导入并执行模块中的代码"><a href="#_1-4-3-直接导入并执行模块中的代码" class="header-anchor">#</a> 1.4.3 直接导入并执行模块中的代码</h4> <p>如果只想单纯地执行某个模块中的代码，并不需要得到模块中向外共享的成员。此</p> <p>时，可以直接导入并执行模块代码，示例代码如下:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//当前文件模块为05_ m3.js</span>
+<span class="token comment">//在当前模块中执行一个for 循环操作</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span>leti<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token number">3</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// -------------------分割线---------------------</span>
+
+<span class="token comment">//直接导入并执行模块代码，不需要得到模块向外共享的成员</span>
+<span class="token keyword">import</span> <span class="token string">'./05_ m3.js'</span>
+</code></pre></div><h2 id="_2-promise"><a href="#_2-promise" class="header-anchor">#</a> 2. Promise</h2> <h3 id="_2-1-回调地狱"><a href="#_2-1-回调地狱" class="header-anchor">#</a> 2.1 回调地狱</h3> <p><strong>多层回调函数的相互嵌套</strong>，就形成了<strong>回调地狱</strong>。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token comment">//第1层回调函数</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token string">'延时1秒后输出'</span><span class="token punctuation">)</span>
+	<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token comment">//第2层回调函数</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token string">'再延时2秒后输出'</span><span class="token punctuation">)</span>
+		<span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> <span class="token comment">//第3层回调函数</span>
+			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'再延时3秒后输出'</span><span class="token punctuation">)</span>
+		<span class="token punctuation">}</span>，<span class="token number">3000</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>，<span class="token number">2000</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>，<span class="token number">1000</span><span class="token punctuation">)</span>
+</code></pre></div><blockquote><p>回调地狱的缺点:</p> <ul><li><p>代码耦合性太强，牵一发而动全身，<strong>难以维护</strong></p></li> <li><p>大量冗余的代码相互嵌套，代码的<strong>可读性变差</strong></p></li></ul></blockquote> <h3 id="_2-2-promise的基本概念"><a href="#_2-2-promise的基本概念" class="header-anchor">#</a> 2.2 Promise的基本概念</h3> <ol><li><p><strong>Promise 是一个构造函数</strong></p> <ul><li><p>我们可 以创建Promise的实例<code>const p = new Promise()</code></p></li> <li><p>new 出来的Promise实例对象，<strong>代表一个异步操作</strong></p></li></ul></li> <li><p><strong>Promise.prototype上包含一个.then()方法</strong></p> <ul><li><p>每一次 new Promise()构造函数得到的实例对象，</p></li> <li><p>都可以通过<strong>原型链</strong>的方式访问到.then() 方法，例如<code>p.then()</code></p></li></ul></li> <li><p><strong>.then() 方法用来预先指定成功和失败的回调函数</strong></p> <ul><li><p>p.then(成功的回调函数，失败的回调函数)</p></li> <li><p>p.then(result=&gt;{}, error=&gt;{})</p></li> <li><p>调用 .then()方法时，<strong>成功</strong>的回调函数是<strong>必选的</strong>、失败的回调函数是可选的</p></li></ul></li></ol> <h3 id="_2-3-then-fs的基本使用"><a href="#_2-3-then-fs的基本使用" class="header-anchor">#</a> 2.3 then-fs的基本使用</h3> <p>调用then-fs提供的<strong>readFile()<strong>方法，可以异步地读取文件的内容，它的</strong>返回值是</strong></p> <p><strong>Promise的实例对象</strong>。因此<strong>可以调用.then() 方法</strong>为每个Promise异步操作指定<strong>成</strong></p> <p><strong>功和失败</strong>之后的回调函数。示例代码如下:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 基于Promise 的方式读取文件</span>
+<span class="token keyword">import</span> thenFs <span class="token keyword">from</span> <span class="token string">'then-fs'</span>
+<span class="token comment">//注意: .then()中的失败回调是可选的，可以被省略</span>
+thenFs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'./files/1.txt'</span>，<span class="token string">'utf8'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">r1</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>r1<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token parameter">，err1</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err1<span class="token punctuation">.</span>message<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token number">7</span> thenFs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'./files/2.txt'</span>，<span class="token string">'utf8'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">r2</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>r2<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token parameter">，err2</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err2<span class="token punctuation">.</span>message<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token number">8</span> thenFs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'./files/3.txt'</span>，<span class="token string">'utf8'</span><span class="token punctuation">)</span><span class="token punctuation">.</span> <span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">r3</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>r3<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token parameter">，err3</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err3<span class="token punctuation">.</span>message<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="_2-4-基于promise按顺序读取文件的内容"><a href="#_2-4-基于promise按顺序读取文件的内容" class="header-anchor">#</a> 2.4 基于Promise按顺序读取文件的内容</h3> <p>Promise支持链式调用从而来解决回调地狱的问题。示例代码如下:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 1.返回值是Promise的实例对象</span>
+thenFs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'./files/1.txt'</span>，<span class="token string">'utf8'</span><span class="token punctuation">)</span> 
+	<span class="token comment">// 2.通过.then 为第一个Promise 实例指定成功之后的回调函数</span>
+	<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">r1</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> 
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>r1<span class="token punctuation">)</span>
+		<span class="token comment">// 3.在第一个.then 中返回一个新的Promise 实例对象</span>
+		<span class="token keyword">return</span> thenFs<span class="token punctuation">.</span> <span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'./files/2.txt'</span>，<span class="token string">'utf8'</span><span class="token punctuation">)</span> 
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+	<span class="token comment">// 4.继续调用.then，为上一个.then的返回值(新的Promise 实例)指定成功之后的回调函数</span>
+	<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">r2</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+		console<span class="token punctuation">.</span><span class="token number">1</span><span class="token function">og</span><span class="token punctuation">(</span>r2<span class="token punctuation">)</span>
+  	<span class="token comment">// 5.在第二个.then 中再返回一个新的Promise 实例对象</span>
+		<span class="token keyword">return</span> thenFs<span class="token punctuation">.</span> <span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">' ./files/3.txt'</span>，<span class="token string">'utf8'</span><span class="token punctuation">)</span> 
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+	<span class="token comment">// 6.继续调用.then，为上一个.then 的返回值(新的Promise 实例)指定成功之后的回调函数</span>
+	<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">r3</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> 
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>r3<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="_2-5-通过-catch捕获错误"><a href="#_2-5-通过-catch捕获错误" class="header-anchor">#</a> 2.5 通过.catch捕获错误</h3> <p>在Promise的链式操作中如果发生了错误，可以使用Promise.prototype**.catch**方法进</p> <p>行捕获和处理:</p> <div class="language-js extra-class"><pre class="language-js"><code>thenFs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'./files/11.txt'</span>，<span class="token string">'utf8'</span><span class="token punctuation">)</span> 
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">r1</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">.</span>message<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="_2-6-promise-all-方法"><a href="#_2-6-promise-all-方法" class="header-anchor">#</a> 2.6 Promise.all()方法</h3> <p>Promise.all()方法会发起并行的Promise异步操作，等所有的异步操作全部结束后才会</p> <p>执行下一步的.then操作( 等待机制)。示例代码如下:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 1.定义一个数组，存放3个读文件的异步操作</span>
+<span class="token keyword">const</span> promiseArr <span class="token operator">=</span> <span class="token punctuation">[</span>
+	thenFs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'./files/11.txt'</span>，<span class="token string">'utf8'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+	thenFs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'./files/2.txt'</span>，<span class="token string">'utf8'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+	thenFs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'./files/3.txt'</span>，<span class="token string">'utf8'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span>
+<span class="token comment">// 2.将Promise 的数组，作为Promise.all() 的参数</span>
+Promise <span class="token punctuation">.</span> <span class="token function">all</span><span class="token punctuation">(</span>promiseArr <span class="token punctuation">)</span>
+	<span class="token comment">//2.1所有文件读取成功(等待机制)</span>
+	<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">[</span>r1<span class="token punctuation">,</span>r2<span class="token punctuation">,</span>r3<span class="token punctuation">]</span></span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>r1，r2，r3<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 2.2捕获Promise 异步操作中的错误</span>
+<span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span> 
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">.</span>message<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><blockquote><p>注意:数组中Promise实例的顺序，就是最终结果的顺序!</p></blockquote> <h2 id="_3-async-await"><a href="#_3-async-await" class="header-anchor">#</a> 3. async / await</h2> <h3 id="_3-1-async-await的基本使用"><a href="#_3-1-async-await的基本使用" class="header-anchor">#</a> 3.1 async/await的基本使用</h3> <p>使用async/await简化Promise异步操作的示例代码如下:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> thenFs <span class="token keyword">from</span> <span class="token string">'then-fs'</span>
+<span class="token comment">// 按照顺序读取文件1，2，3的内容</span>
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">getAllFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">const</span> r1 <span class="token operator">=</span> <span class="token keyword">await</span> thenFs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'./files/1.txt'</span>，<span class="token string">'utf8'</span><span class="token punctuation">)</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>r1<span class="token punctuation">)</span>
+	<span class="token keyword">const</span> r2 <span class="token operator">=</span> <span class="token keyword">await</span> thenFs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'./files/2.txt'</span>，<span class="token string">'utf8'</span><span class="token punctuation">)</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>r2<span class="token punctuation">)</span>
+	<span class="token keyword">const</span> r3 <span class="token operator">=</span> <span class="token keyword">await</span> thenFs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'./files/3.txt'</span>，<span class="token string">'utf8'</span><span class="token punctuation">)</span>
+	console<span class="token punctuation">.</span> <span class="token function">log</span><span class="token punctuation">(</span>r3<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">getAllFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="_3-2-async-await的使用注意事项"><a href="#_3-2-async-await的使用注意事项" class="header-anchor">#</a> 3.2 async/await的使用注意事项</h3> <ol><li><p>如果在function中使用了await，则function必须被async修饰</p></li> <li><p>在async方法中，第一个await之前的代码会同步执行，await 之后的代码会异步</p></li></ol> <h2 id="_4-eventloop"><a href="#_4-eventloop" class="header-anchor">#</a> 4. EventLoop</h2> <h3 id="_4-1-同步任务和异步任务"><a href="#_4-1-同步任务和异步任务" class="header-anchor">#</a> 4.1 同步任务和异步任务</h3> <p>为了防止某个<strong>耗时任务</strong>导致<strong>程序假死</strong>的问题， JavaScript把待执行的任务分为了两类:</p> <ol><li><p><strong>同步任务</strong>(synchronous)</p> <ul><li><p>又叫做<strong>非耗时任务</strong>，指的是在主线程.上排队执行的那些任务</p></li> <li><p>只有前一个任务执行完毕,才能执行后一个任务</p></li></ul></li> <li><p><strong>异步任务</strong>( asynchronous )</p> <ul><li><p>又叫做<strong>耗时任务</strong>，异步任务由JavaScript<strong>委托给</strong>宿主环境进行执行</p></li> <li><p>当异步任务执行完成后，会<strong>通知JavaScript主线程</strong>执行异步任务的<strong>回调函数</strong></p></li></ul></li></ol> <h3 id="_4-2-同步任务和异步任务的执行过程"><a href="#_4-2-同步任务和异步任务的执行过程" class="header-anchor">#</a> 4.2 同步任务和异步任务的执行过程</h3> <ol><li>同步任务由JavaScript主线程次序执行</li> <li>异步任务<strong>委托给</strong>宿主环境执行</li> <li>已完成的异步任务<strong>对应的回调函数</strong>，会被加入到任务队列中等待执行</li> <li>JavaScript 主线程的<strong>执行栈</strong>被清空后，会读取任务队列中的回调函数，次序执行</li> <li><strong>JavaScript 主线程不断重复上面的第4步</strong></li></ol> <h3 id="_4-3-eventloop的基本概念"><a href="#_4-3-eventloop的基本概念" class="header-anchor">#</a> 4.3 EventLoop的基本概念</h3> <p><strong>JavaScript主线程从“任务队列”中读取异步任务的回调函数,放到执行栈中依次执行。</strong></p> <p>这个过程是循环不断的，所以整个的这种运行机制又称为<strong>EventLoop</strong> ( 事件循环)。</p> <h3 id="_4-4-宏任务与微任务"><a href="#_4-4-宏任务与微任务" class="header-anchor">#</a> 4.4 宏任务与微任务</h3> <h4 id="_4-4-1-什么是宏任务和微任务"><a href="#_4-4-1-什么是宏任务和微任务" class="header-anchor">#</a> 4.4.1 什么是宏任务和微任务</h4> <p>JavaScript把异步任务又做了进一步的划分，异步任务又分为两类,分别是:</p> <ol><li>宏任务(macrotask)
+<ul><li>异步 Ajax请求</li> <li>setTimeout、 setInterval</li> <li>文件操作</li> <li>其它宏任务</li></ul></li> <li>微任务(microtask)
+<ul><li>Promise.then、 .catch 和.finally</li> <li>process.nextTick</li> <li>其它微任务</li></ul></li></ol> <h4 id="_4-4-2-宏任务和微任务的执行顺序"><a href="#_4-4-2-宏任务和微任务的执行顺序" class="header-anchor">#</a> 4.4.2 宏任务和微任务的执行顺序</h4> <p>每一个宏任务执行完之后，都会检查<strong>是否存在待执行的微任务</strong>，如果有，则执行完所有微</p> <p>任务之后，再继续执行下一个宏任务。</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/plugin/assets/js/app.6bcd672a.js" defer></script><script src="/plugin/assets/js/2.0dc65c5a.js" defer></script><script src="/plugin/assets/js/41.6e400367.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>display、visibility和opacity区别 | 火龙果文档</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/plugin/images/common/logo.png">
+    <meta name="description" content="Karl_fang文档笔记">
+    
+    <link rel="preload" href="/plugin/assets/css/0.styles.815695dc.css" as="style"><link rel="preload" href="/plugin/assets/js/app.6bcd672a.js" as="script"><link rel="preload" href="/plugin/assets/js/2.0dc65c5a.js" as="script"><link rel="preload" href="/plugin/assets/js/23.e70565b9.js" as="script"><link rel="prefetch" href="/plugin/assets/js/10.b2011a74.js"><link rel="prefetch" href="/plugin/assets/js/11.785ce144.js"><link rel="prefetch" href="/plugin/assets/js/12.1abff726.js"><link rel="prefetch" href="/plugin/assets/js/13.5b32e995.js"><link rel="prefetch" href="/plugin/assets/js/14.73af3a08.js"><link rel="prefetch" href="/plugin/assets/js/15.0d07ed30.js"><link rel="prefetch" href="/plugin/assets/js/16.e16bfb60.js"><link rel="prefetch" href="/plugin/assets/js/17.dd28672d.js"><link rel="prefetch" href="/plugin/assets/js/18.28de6ffa.js"><link rel="prefetch" href="/plugin/assets/js/19.9b1c077f.js"><link rel="prefetch" href="/plugin/assets/js/20.b7a40052.js"><link rel="prefetch" href="/plugin/assets/js/21.13ededb3.js"><link rel="prefetch" href="/plugin/assets/js/22.3e524e46.js"><link rel="prefetch" href="/plugin/assets/js/24.82ecefbd.js"><link rel="prefetch" href="/plugin/assets/js/25.47f64076.js"><link rel="prefetch" href="/plugin/assets/js/26.887141da.js"><link rel="prefetch" href="/plugin/assets/js/27.0adbc230.js"><link rel="prefetch" href="/plugin/assets/js/28.4678cbbb.js"><link rel="prefetch" href="/plugin/assets/js/29.8cc46427.js"><link rel="prefetch" href="/plugin/assets/js/3.75d187dd.js"><link rel="prefetch" href="/plugin/assets/js/30.79045775.js"><link rel="prefetch" href="/plugin/assets/js/31.d6701d96.js"><link rel="prefetch" href="/plugin/assets/js/32.200daad3.js"><link rel="prefetch" href="/plugin/assets/js/33.97ff19ac.js"><link rel="prefetch" href="/plugin/assets/js/34.b530c4ba.js"><link rel="prefetch" href="/plugin/assets/js/35.07eed652.js"><link rel="prefetch" href="/plugin/assets/js/36.88428886.js"><link rel="prefetch" href="/plugin/assets/js/37.f06845d1.js"><link rel="prefetch" href="/plugin/assets/js/38.9e337bb6.js"><link rel="prefetch" href="/plugin/assets/js/39.581b6d55.js"><link rel="prefetch" href="/plugin/assets/js/4.2557c00f.js"><link rel="prefetch" href="/plugin/assets/js/40.90f7c81d.js"><link rel="prefetch" href="/plugin/assets/js/41.6e400367.js"><link rel="prefetch" href="/plugin/assets/js/42.82165da4.js"><link rel="prefetch" href="/plugin/assets/js/43.d7917580.js"><link rel="prefetch" href="/plugin/assets/js/44.ec25df08.js"><link rel="prefetch" href="/plugin/assets/js/45.d59d8ab8.js"><link rel="prefetch" href="/plugin/assets/js/46.e872c588.js"><link rel="prefetch" href="/plugin/assets/js/47.64fb74eb.js"><link rel="prefetch" href="/plugin/assets/js/48.7bc4a0d4.js"><link rel="prefetch" href="/plugin/assets/js/49.86d12a70.js"><link rel="prefetch" href="/plugin/assets/js/5.a7ef2093.js"><link rel="prefetch" href="/plugin/assets/js/50.02d4da36.js"><link rel="prefetch" href="/plugin/assets/js/51.073872ef.js"><link rel="prefetch" href="/plugin/assets/js/52.f81b6d57.js"><link rel="prefetch" href="/plugin/assets/js/53.cd419d45.js"><link rel="prefetch" href="/plugin/assets/js/54.e11e0d15.js"><link rel="prefetch" href="/plugin/assets/js/55.b2d46a0d.js"><link rel="prefetch" href="/plugin/assets/js/56.b19a724a.js"><link rel="prefetch" href="/plugin/assets/js/57.f3b90ca9.js"><link rel="prefetch" href="/plugin/assets/js/58.e087611c.js"><link rel="prefetch" href="/plugin/assets/js/59.2ceb4f5a.js"><link rel="prefetch" href="/plugin/assets/js/6.c90bfee5.js"><link rel="prefetch" href="/plugin/assets/js/60.1c3837bb.js"><link rel="prefetch" href="/plugin/assets/js/61.5351d62b.js"><link rel="prefetch" href="/plugin/assets/js/62.bf826f0f.js"><link rel="prefetch" href="/plugin/assets/js/63.9bfaf771.js"><link rel="prefetch" href="/plugin/assets/js/64.7709f4e4.js"><link rel="prefetch" href="/plugin/assets/js/65.d8f016ed.js"><link rel="prefetch" href="/plugin/assets/js/66.56ba731e.js"><link rel="prefetch" href="/plugin/assets/js/67.10a2aa0e.js"><link rel="prefetch" href="/plugin/assets/js/68.76d126f9.js"><link rel="prefetch" href="/plugin/assets/js/69.b03b9f47.js"><link rel="prefetch" href="/plugin/assets/js/7.90687158.js"><link rel="prefetch" href="/plugin/assets/js/70.2d1fb0ff.js"><link rel="prefetch" href="/plugin/assets/js/71.b8bf4d4a.js"><link rel="prefetch" href="/plugin/assets/js/72.c8404d6c.js"><link rel="prefetch" href="/plugin/assets/js/8.d8b4f155.js"><link rel="prefetch" href="/plugin/assets/js/9.968913dd.js">
+    <link rel="stylesheet" href="/plugin/assets/css/0.styles.815695dc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/plugin/" class="home-link router-link-active"><img src="/plugin/images/common/logo.png" alt="火龙果文档" class="logo"> <span class="site-name can-hide">火龙果文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/plugin/" class="nav-link">
+    Home
+  </a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Guide" class="dropdown-title"><span class="title">Guide</span> <span class="arrow down"></span></button> <button type="button" aria-label="Guide" class="mobile-dropdown-title"><span class="title">Guide</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+            其他
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/help/emoji.html" class="nav-link">
+    Emoji
+  </a></li></ul></li><li class="dropdown-item"><h4>
+            Plugin
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/plugin/前言.html" class="nav-link">
+    前言
+  </a></li><li class="dropdown-subitem"><a href="/plugin/plugin/myDevTool.html" class="nav-link">
+    myDevTool
+  </a></li><li class="dropdown-subitem"><a href="/plugin/plugin/myNewTab.html" class="nav-link">
+    myNewTab
+  </a></li><li class="dropdown-subitem"><a href="/plugin/plugin/Pitaya.html" class="nav-link">
+    Pitaya
+  </a></li></ul></li><li class="dropdown-item"><h4>
+            Manifest V3
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/guide/V3的配置更改.html" class="nav-link">
+    V3的配置更改
+  </a></li><li class="dropdown-subitem"><a href="/plugin/guide/V3的manifest.html" class="nav-link">
+    V3的manifest
+  </a></li><li class="dropdown-subitem"><a href="/plugin/help/declarePermission.html" class="nav-link">
+    权限声明
+  </a></li></ul></li><li class="dropdown-item"><h4>
+            NPM库
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/npm/mylibs.html" class="nav-link">
+    @karl_fang/mylibs
+  </a></li><li class="dropdown-subitem"><a href="/plugin/npm/js数据结构.html" class="nav-link">
+    @karl_fang/data-structure
+  </a></li></ul></li><li class="dropdown-item"><h4>
+            脚手架工具
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/guide/karl-cli.html" class="nav-link">
+    karl-cli
+  </a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+            Vue笔记系列
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/frontend/note/Vue(1).html" class="nav-link">
+    Vue(1)
+  </a></li><li class="dropdown-subitem"><a href="/plugin/frontend/note/Vue(2).html" class="nav-link">
+    Vue(2)
+  </a></li><li class="dropdown-subitem"><a href="/plugin/frontend/note/Vue(3).html" class="nav-link">
+    Vue(3)
+  </a></li><li class="dropdown-subitem"><a href="/plugin/frontend/note/Vue(4).html" class="nav-link">
+    Vue(4)
+  </a></li><li class="dropdown-subitem"><a href="/plugin/frontend/note/Vue(5).html" class="nav-link">
+    Vue(5)
+  </a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/ox4f5da2" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/plugin/" class="nav-link">
+    Home
+  </a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Guide" class="dropdown-title"><span class="title">Guide</span> <span class="arrow down"></span></button> <button type="button" aria-label="Guide" class="mobile-dropdown-title"><span class="title">Guide</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+            其他
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/help/emoji.html" class="nav-link">
+    Emoji
+  </a></li></ul></li><li class="dropdown-item"><h4>
+            Plugin
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/plugin/前言.html" class="nav-link">
+    前言
+  </a></li><li class="dropdown-subitem"><a href="/plugin/plugin/myDevTool.html" class="nav-link">
+    myDevTool
+  </a></li><li class="dropdown-subitem"><a href="/plugin/plugin/myNewTab.html" class="nav-link">
+    myNewTab
+  </a></li><li class="dropdown-subitem"><a href="/plugin/plugin/Pitaya.html" class="nav-link">
+    Pitaya
+  </a></li></ul></li><li class="dropdown-item"><h4>
+            Manifest V3
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/guide/V3的配置更改.html" class="nav-link">
+    V3的配置更改
+  </a></li><li class="dropdown-subitem"><a href="/plugin/guide/V3的manifest.html" class="nav-link">
+    V3的manifest
+  </a></li><li class="dropdown-subitem"><a href="/plugin/help/declarePermission.html" class="nav-link">
+    权限声明
+  </a></li></ul></li><li class="dropdown-item"><h4>
+            NPM库
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/npm/mylibs.html" class="nav-link">
+    @karl_fang/mylibs
+  </a></li><li class="dropdown-subitem"><a href="/plugin/npm/js数据结构.html" class="nav-link">
+    @karl_fang/data-structure
+  </a></li></ul></li><li class="dropdown-item"><h4>
+            脚手架工具
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/guide/karl-cli.html" class="nav-link">
+    karl-cli
+  </a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+            Vue笔记系列
+          </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plugin/frontend/note/Vue(1).html" class="nav-link">
+    Vue(1)
+  </a></li><li class="dropdown-subitem"><a href="/plugin/frontend/note/Vue(2).html" class="nav-link">
+    Vue(2)
+  </a></li><li class="dropdown-subitem"><a href="/plugin/frontend/note/Vue(3).html" class="nav-link">
+    Vue(3)
+  </a></li><li class="dropdown-subitem"><a href="/plugin/frontend/note/Vue(4).html" class="nav-link">
+    Vue(4)
+  </a></li><li class="dropdown-subitem"><a href="/plugin/frontend/note/Vue(5).html" class="nav-link">
+    Vue(5)
+  </a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/ox4f5da2" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/plugin/" aria-current="page" class="sidebar-link">README</a></li><li><a href="/plugin/Chrome插件.html" class="sidebar-link">Chrome插件</a></li><li><a href="/plugin/脚手架工具开发.html" class="sidebar-link">脚手架工具开发</a></li><li><a href="/plugin/vuepress.html" class="sidebar-link">vuepress快速上手</a></li><li><a href="/plugin/前端笔记.html" class="sidebar-link">前端笔记</a></li><li><a href="/plugin/npm发布流程.html" class="sidebar-link">npm发布流程</a></li><li><a href="/plugin/Leetcode.html" class="sidebar-link">Leetcode</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="display、visibility和opacity区别"><a href="#display、visibility和opacity区别" class="header-anchor">#</a> display、visibility和opacity区别</h1> <h3 id="共同点"><a href="#共同点" class="header-anchor">#</a> 共同点</h3> <p>都可以隐藏元素，让元素不可见</p> <h3 id="区别"><a href="#区别" class="header-anchor">#</a> 区别</h3> <p><strong>display: none</strong></p> <ol><li>DOM 结构：浏览器不会渲染 display 属性为 none 的元素，不占据空间；</li> <li>事件监听：无法进行 DOM 事件监听；</li> <li>性能：动态改变此属性时会引起重排，性能较差；</li> <li>继承：不会被子元素继承，毕竟子类也不会被渲染；</li> <li>transition：transition 不支持 display。</li></ol> <p><strong>visibility: hidden</strong></p> <ol><li>DOM 结构：元素被隐藏，但是会被渲染不会消失，占据空间；</li> <li>事件监听：无法进行 DOM 事件监听；</li> <li>性能：动态改变此属性时会引起重绘，性能较高；</li> <li>继承：会被子元素继承，子元素可以通过设置 visibility: visible; 来取消隐藏；</li> <li>transition：transition 支持 visibility。</li></ol> <p><strong>opacity: 0</strong></p> <ol><li>DOM 结构：透明度为 100%，元素隐藏，占据空间；</li> <li>事件监听：可以进行 DOM 事件监听；</li> <li>性能：提升为合成层，不会触发重绘，性能较高；</li> <li>继承：会被子元素继承,且，子元素并不能通过 opacity: 1 来取消隐藏；</li> <li>transition：transition 支持 opacity。</li></ol> <h3 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h3> <table><thead><tr><th style="text-align:center;"></th> <th style="text-align:center;">display:none</th> <th style="text-align:center;">visibility:hidden</th> <th style="text-align:center;">opacity:0</th></tr></thead> <tbody><tr><td style="text-align:center;">页面中</td> <td style="text-align:center;"><strong>不存在</strong></td> <td style="text-align:center;">存在</td> <td style="text-align:center;">存在</td></tr> <tr><td style="text-align:center;">重绘</td> <td style="text-align:center;">会</td> <td style="text-align:center;">会</td> <td style="text-align:center;"><strong>不一定</strong></td></tr> <tr><td style="text-align:center;">重排</td> <td style="text-align:center;"><strong>会</strong></td> <td style="text-align:center;">不会</td> <td style="text-align:center;">不会</td></tr> <tr><td style="text-align:center;">自身绑定事件</td> <td style="text-align:center;">不触发</td> <td style="text-align:center;">不触发</td> <td style="text-align:center;"><strong>可触发</strong></td></tr> <tr><td style="text-align:center;">transition</td> <td style="text-align:center;"><strong>不支持</strong></td> <td style="text-align:center;">支持</td> <td style="text-align:center;">支持</td></tr> <tr><td style="text-align:center;">子元素复原</td> <td style="text-align:center;">不能</td> <td style="text-align:center;"><strong>能</strong></td> <td style="text-align:center;">不能</td></tr> <tr><td style="text-align:center;">被遮挡元素触发事件</td> <td style="text-align:center;">不影响</td> <td style="text-align:center;">不影响</td> <td style="text-align:center;"><strong>影响</strong></td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/plugin/assets/js/app.6bcd672a.js" defer></script><script src="/plugin/assets/js/2.0dc65c5a.js" defer></script><script src="/plugin/assets/js/23.e70565b9.js" defer></script>
+  </body>
+</html>
